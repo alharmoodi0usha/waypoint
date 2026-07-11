@@ -425,7 +425,7 @@ Address the student by first name occasionally. When they ask what to pack, tail
       const reply = await api.askBuddy(nextMessages, buildBuddyContext());
       setMessages((cur) => [...cur, { role: "assistant", text: reply || "Sorry — I didn't catch that. Could you try rephrasing?" }]);
     } catch {
-      setMessages((cur) => [...cur, { role: "assistant", text: "I couldn't reach my brain just now. If you're the developer: make sure the 'buddy' Edge Function is deployed and ANTHROPIC_API_KEY is set (see README). Otherwise, give it a moment and try again." }]);
+      setMessages((cur) => [...cur, { role: "assistant", text: "Buddy isn't available just yet — we're still setting this feature up! Everything else on Waypoint works though, so check out your Landing Plan, Tips, and Notes in the meantime. ✦" }]);
     }
     setChatLoading(false);
   }
