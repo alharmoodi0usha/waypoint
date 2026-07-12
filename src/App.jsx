@@ -6,13 +6,29 @@ import * as api from "./lib/api";
 // ---------- Static data ----------
 const UNIVERSITIES = [
   { id: "nyuad", name: "NYU Abu Dhabi", city: "Abu Dhabi", country: "UAE", flag: "🇦🇪", rounds: "ED I Nov 1 · ED II Jan 1 · RD Jan 5" },
+  { id: "sharjah", name: "University of Sharjah", city: "Sharjah", country: "UAE", flag: "🇦🇪", rounds: "Rolling (Fall & Spring intakes)" },
+  { id: "aus", name: "American University of Sharjah", city: "Sharjah", country: "UAE", flag: "🇦🇪", rounds: "Rolling · priority deadlines per semester" },
+  { id: "khalifa", name: "Khalifa University", city: "Abu Dhabi", country: "UAE", flag: "🇦🇪", rounds: "Rolling (Fall & Spring intakes)" },
+  { id: "adu", name: "Abu Dhabi University", city: "Abu Dhabi", country: "UAE", flag: "🇦🇪", rounds: "Rolling (Fall & Spring intakes)" },
+  { id: "zayed", name: "Zayed University", city: "Abu Dhabi / Dubai", country: "UAE", flag: "🇦🇪", rounds: "Rolling (Fall & Spring intakes)" },
+  { id: "uaeu", name: "UAE University", city: "Al Ain", country: "UAE", flag: "🇦🇪", rounds: "Rolling (Fall & Spring intakes)" },
   { id: "nyunyc", name: "NYU New York", city: "New York", country: "USA", flag: "🇺🇸", rounds: "ED I Nov 1 · ED II Jan 1 · RD Jan 5" },
+  { id: "columbia", name: "Columbia University", city: "New York", country: "USA", flag: "🇺🇸", rounds: "ED Nov 1 · RD Jan 1" },
+  { id: "georgetown", name: "Georgetown University", city: "Washington DC", country: "USA", flag: "🇺🇸", rounds: "EA Nov 1 · RD Jan 10" },
+  { id: "bu", name: "Boston University", city: "Boston", country: "USA", flag: "🇺🇸", rounds: "ED Nov 1 · ED II Jan 4 · RD Jan 4" },
   { id: "lse", name: "London School of Economics", city: "London", country: "UK", flag: "🇬🇧", rounds: "UCAS Jan 25" },
-  { id: "toronto", name: "University of Toronto", city: "Toronto", country: "Canada", flag: "🇨🇦", rounds: "EA Nov 7 · RD Jan 15 (OUAC)" },
   { id: "kings", name: "King's College London", city: "London", country: "UK", flag: "🇬🇧", rounds: "UCAS Jan 25" },
+  { id: "ucl", name: "UCL", city: "London", country: "UK", flag: "🇬🇧", rounds: "UCAS Jan 25" },
+  { id: "oxford", name: "University of Oxford", city: "Oxford", country: "UK", flag: "🇬🇧", rounds: "UCAS Oct 15 (early deadline!)" },
+  { id: "cambridge", name: "University of Cambridge", city: "Cambridge", country: "UK", flag: "🇬🇧", rounds: "UCAS Oct 15 (early deadline!)" },
+  { id: "manchester", name: "University of Manchester", city: "Manchester", country: "UK", flag: "🇬🇧", rounds: "UCAS Jan 25" },
+  { id: "edinburgh", name: "University of Edinburgh", city: "Edinburgh", country: "UK", flag: "🏴", rounds: "UCAS Jan 25" },
+  { id: "toronto", name: "University of Toronto", city: "Toronto", country: "Canada", flag: "🇨🇦", rounds: "EA Nov 7 · RD Jan 15 (OUAC)" },
+  { id: "mcgill", name: "McGill University", city: "Montreal", country: "Canada", flag: "🇨🇦", rounds: "Intl deadline Jan 15" },
+  { id: "ubc", name: "University of British Columbia", city: "Vancouver", country: "Canada", flag: "🇨🇦", rounds: "Intl deadline Jan 15" },
   { id: "sciencespo", name: "Sciences Po", city: "Paris", country: "France", flag: "🇫🇷", rounds: "R1 Oct 22 · R2 Jan 6 · R3 Feb 24" },
   { id: "melbourne", name: "University of Melbourne", city: "Melbourne", country: "Australia", flag: "🇦🇺", rounds: "Rolling (Feb & Jul intakes)" },
-  { id: "edinburgh", name: "University of Edinburgh", city: "Edinburgh", country: "UK", flag: "🏴", rounds: "UCAS Jan 25" },
+  { id: "sydney", name: "University of Sydney", city: "Sydney", country: "Australia", flag: "🇦🇺", rounds: "Rolling (Feb & Jul intakes)" },
 ];
 
 const COUNTRIES = ["UAE", "USA", "UK", "Canada", "France", "Australia", "Other"];
