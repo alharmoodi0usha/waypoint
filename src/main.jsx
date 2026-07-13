@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
+import { Analytics } from "@vercel/analytics/react";
 import { supabase } from "./lib/supabase";
 import Auth from "./Auth";
 import App from "./App";
@@ -21,5 +22,6 @@ function Root() {
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Root />
+    <Analytics />
   </React.StrictMode>
 );
